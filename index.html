@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Aikon OS // Ultra Instinct</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Aikon">
+    
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="clock-container">
+            <div id="time">00:00:00</div>
+            <div id="date">Aikon System Active</div>
+        </div>
+        <div class="aura-core-container">
+            <div class="aura-core"></div>
+        </div>
+    </header>
+
+    <div class="console">
+        <div class="console-header">
+            <span>AIKON CORE // ULTRA INSTINCT</span>
+            <div class="system-status">
+                <div class="status-dot"></div>
+                <span>OFFLINE SECURE</span>
+            </div>
+        </div>
+        
+        <div class="feed" id="feed">
+            <div class="message msg-aikon">
+                Systems initialized. I am Aikon. Tap a suggestion below or type a custom command. Let's transcend limits.
+            </div>
+        </div>
+
+        <div class="active-widgets" id="widget-area" style="display: none;"></div>
+    </div>
+
+    <div class="controls">
+        <div class="suggestions">
+            <span class="chip" onclick="fillCommand('Remind me to check the oven in 15 seconds')">⏱️ 15s Timer</span>
+            <span class="chip" onclick="fillCommand('Note: Goku achieved UI at the Tournament of Power')">🧠 Memory</span>
+            <span class="chip" onclick="fillCommand('Show my notes')">📝 Show Notes</span>
+            <span class="chip" onclick="fillCommand('Calculate (150 + 50) / 2')">🧮 Calculate</span>
+            <span class="chip" onclick="fillCommand('Tell me about Ultra Instinct')">🌌 UI Lore</span>
+        </div>
+        <div class="input-bar">
+            <input type="text" id="input-cmd" placeholder="Command Aikon..." autocomplete="off">
+            <button id="btn-send">➔</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
